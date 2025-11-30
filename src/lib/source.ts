@@ -7,7 +7,7 @@ import { createElement } from "react";
 
 export const i18n: I18nConfig = {
   defaultLanguage: "en",
-  languages: ["en", "zh"],
+  languages: ["en"], // 移除 "zh"，因为搜索库不支持中文
 };
 
 export const source = loader({

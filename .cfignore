@@ -1,0 +1,22 @@
+# Cloudflare Pages 忽略文件配置
+# 排除大文件和缓存文件
+
+# Next.js 缓存
+.next/cache/
+cache/
+
+# 构建缓存
+.next/
+out/
+
+# 依赖
+node_modules/
+
+# 环境变量
+.env*
+!.env.example
+
+# 其他
+.DS_Store
+*.log
+.wrangler/
