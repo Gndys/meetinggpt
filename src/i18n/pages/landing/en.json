@@ -10,13 +10,18 @@
       },
       "url": "/"
     },
-    "nav": {
-      "items": [
-        {
-          "title": "Features",
-          "url": "/#feature",
-          "icon": "RiSparkling2Line"
-        },
+  "nav": {
+    "items": [
+      {
+        "title": "Product Demo",
+        "url": "/upload",
+        "icon": "RiRobot2Line"
+      },
+      {
+        "title": "Features",
+        "url": "/#feature",
+        "icon": "RiSparkling2Line"
+      },
         {
           "title": "Pricing",
           "url": "/pricing",

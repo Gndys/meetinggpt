@@ -121,5 +121,119 @@
     "contact_tip": "其他联系方式",
     "rating_tip": "您对 ShipAny 的看法如何？",
     "placeholder": "在这里留下您的反馈..."
+  },
+  "transcript_lab": {
+    "metadata": {
+      "title": "逐字稿上传 · AI 智能总结 | 慧会纪要",
+      "description": "上传或粘贴会议逐字稿，Gemini 3 Pro Preview 将按照家电行业模板生成结构化会议纪要。"
+    },
+    "hero": {
+      "title": "上传逐字稿，几分钟拿到结构化纪要",
+      "subtitle": "支持拖拽上传或直接粘贴，AI 自动去口语化、重构逻辑，并按主题输出五层结构化报告。"
+    },
+    "model_badge": "gemini-3-pro-preview",
+    "model_description": "Apimart 接入 · 行业提示词优化",
+    "actions": {
+      "load_demo": "填入示例内容",
+      "clear": "清空当前内容",
+      "submit": "生成结构化摘要",
+      "loading": "生成中...",
+      "copy": "复制摘要",
+      "copied": "摘要已复制",
+      "copy_failed": "复制失败，请手动选择复制",
+      "export_pdf": "导出 PDF",
+      "exporting": "导出中..."
+    },
+    "form": {
+      "title": "会议背景",
+      "description": "额外的上下文可以帮助模型识别场景并强化重点。",
+      "meeting_title": "会议主题",
+      "meeting_title_placeholder": "如：Q1 渠道策略会",
+      "meeting_type": "会议类型",
+      "meeting_type_placeholder": "选择会议类型",
+      "meeting_type_options": {
+        "strategy": "战略规划会",
+        "product": "产品评审会",
+        "sales": "销售/招商会",
+        "supply": "供应商谈判",
+        "review": "经营复盘会",
+        "other": "其他类型"
+      },
+      "meeting_participants": "主要发言人",
+      "meeting_participants_placeholder": "如：张总、李总、渠道部、供应商 A",
+      "meeting_focus": "重点议题 / 想解决的问题",
+      "meeting_focus_placeholder": "例如：梳理渠道价格体系、确定 618 激励政策、明确供应链风险。"
+    },
+    "transcript": {
+      "title": "逐字稿内容",
+      "description": "上传 txt / md / srt 等纯文本文件，或直接粘贴内容。",
+      "placeholder": "直接将逐字稿粘贴在这里，建议包含说话人标识、重要数字等信息。",
+      "limit_hint": "最多支持 {max} 个字符，超出请分段处理。",
+      "parsing_label": "正在解析 Word / PDF 文档..."
+    },
+    "tabs": {
+      "upload": "上传文件",
+      "paste": "直接粘贴"
+    },
+    "upload": {
+      "drop": "拖拽文本文件到这里，或",
+      "helper": "支持 .txt / .md / .srt / .vtt 及 .docx / .pdf，文本建议 <2MB，文档自动解析",
+      "choose_file": "点击选择文件",
+      "file_tip": "Word / PDF 也可直接上传，我们会自动抽取文本内容。"
+    },
+    "stats": {
+      "characters": "字符数",
+      "words": "词数",
+      "tokens": "预估 Tokens"
+    },
+    "timeline": {
+      "title": "处理流程",
+      "description": "每一步都针对家电行业场景做了提示词优化",
+      "collect": {
+        "title": "导入语料",
+        "description": "上传逐字稿、补充背景并锁定会议类型"
+      },
+      "analyze": {
+        "title": "行业语义理解",
+        "description": "Gemini 去口语化，提炼观点、识别金句与关键数字"
+      },
+      "deliver": {
+        "title": "结构化交付",
+        "description": "输出 5 层摘要 + 主题拆解，可直接分享或导出"
+      }
+    },
+    "guide": {
+      "title": "提示词规则",
+      "description": "模型会严格按照以下写作规范生成内容：",
+      "bullet_1": "去口语化：删除语气词、重复和无意义停顿。",
+      "bullet_2": "重构逻辑：按主题和重要性重排内容，而不是逐句复述。",
+      "bullet_3": "保留故事：保留生动案例，用更精炼的语言转述。",
+      "bullet_4": "提炼金句：标注最能代表观点的原话。",
+      "bullet_5": "分层呈现：一句话总结 → 核心观点 → 主题拆解 → 卡片 → 元分析。"
+    },
+    "summary": {
+      "title": "AI 智能总结",
+      "description": "摘要来自 Gemini 3 Pro Preview，包含多层结构和行动建议。",
+      "model_label": "Gemini 3 Pro · 行业模板",
+      "last_updated": "最后更新：{time}",
+      "structured_hint": "内容已按“核心主题/核心观点/主题拆解/卡片/元分析”排序。",
+      "empty_title": "等待生成摘要",
+      "empty_description": "点击“生成结构化摘要”即可得到完整的会议报告。"
+    },
+    "toast": {
+      "need_transcript": "请先上传或粘贴逐字稿",
+      "file_too_large": "文件超过 {max_mb}MB，请压缩后重试",
+      "file_not_supported": "目前仅支持 txt / md / srt / vtt / docx / pdf 文件",
+      "content_too_long": "内容超过 {max} 字符，请分段生成",
+      "load_demo": "示例内容已填入",
+      "generate_success": "总结生成完成",
+      "generate_failed": "生成失败，请稍后再试",
+      "parse_success": "文档解析完成",
+      "parse_failed": "文档解析失败，请尝试重新上传",
+      "parse_unsupported": "暂不支持该格式，请上传 txt / docx / pdf",
+      "export_success": "PDF 导出完成",
+      "export_failed": "导出失败，请稍后再试"
+    },
+    "sample_transcript": "主持人：各位早上好，今天的渠道策略会我们聚焦两个问题：一是 618 前的价格体系，二是华东大区的动销压力。\n张总：我们一季度全国动销同比 +18%，但华东只增长 5%，核心原因是价格倒挂严重，代理商把旗舰机型拿到线上去甩价。\n李总：上周巡店发现，部分三四线市场的促销政策没人讲清楚，导购不知道 618 的执行口径，导致订单被友商抢走。\n供应商代表 A：压缩机供货没有问题，关键是我们提前锁单。建议本周就把 618 版本的预测量发给我们，方便备料。\n市场部：我建议把 618 的返利政策做梯度，完成 120% 目标的经销商，返点从 3% 提到 4.5%，这样他们才有动力冲量。\n张总：好的，重点客户名单今晚前给我，价格体系必须本周内敲定。"
   }
 }
